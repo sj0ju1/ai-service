@@ -2,27 +2,21 @@
 
 ```mermaid
 flowchart TD
-    U[사용자 요청] --> S[Supervisor]
+    U[User Query] --> S[Supervisor]
 
-    S --> W{웹 검색 결과 존재?}
-    W -- 아니오 --> WS[Web Search Agent<br/>최신 공개 신호 수집]
-    WS --> S
-    W -- 예 --> R{RAG 결과 존재?}
+    S --> R[RAG Agent]
+    S --> W[Web Search Agent]
+    S --> D[Draft Generation Agent]
 
-    R -- 아니오 --> RA[RAG Agent<br/>JEDEC/논문/기술 자료 검색]
-    RA --> S
-    R -- 예 --> D{초안 존재?}
+    R -->|문서 근거 전달| S
+    W -->|최신 공개 신호 전달| S
+    D -->|초안 검증 요청| S
 
-    D -- 아니오 --> DA[Draft Agent<br/>TRL 기반 보고서 초안 작성]
-    DA --> S
-    D -- 예 --> V[Supervisor 검증]
-
-    V --> A{승인 여부}
-    A -- 승인 --> F[Formatting Node<br/>최종 문서 생성]
-    F --> O[최종 산출물]
-
-    A -- 출처/웹 근거 부족 --> WS
-    A -- 초안 품질 보완 필요 --> DA
+    S -->|수정 필요시 재작성 요청| D
+    S -->|출처 보강 필요시 재검색 요청| W
+    S -->|검증 OK: request PDF| F[Formatting Node]
+    F -->|PDF 생성 완료| S
+    S -->|생성 확인 후 종료| E[END]
 ```
 
 ## 프로젝트 소개
