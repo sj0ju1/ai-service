@@ -1,7 +1,5 @@
 # Subject
 SK hynix 관점에서 Samsung·Micron의 HBM, PIM, CXL 기술을 비교하고, 최신 공개 신호와 JEDEC 기반 RAG를 결합해 TRL 추정 보고서를 생성하는 Supervisor 중심 Multi-Agent 프로젝트입니다.
-# Subject
-SK hynix 관점에서 Samsung·Micron의 HBM, PIM, CXL 기술을 비교하고, 최신 공개 신호와 JEDEC 기반 RAG를 결합해 TRL 추정 보고서를 생성하는 Supervisor 중심 Multi-Agent 프로젝트입니다.
 
 ```mermaid
 flowchart TD
@@ -97,16 +95,8 @@ flowchart TD
 상단 Mermaid 그래프와 [agents/README.md](./agents/README.md)에 전체 Supervisor 중심 아키텍처를 정리했습니다.
 
 ## Directory Structure
-## Directory Structure
 ```text
 miniproject/
-├── data/                  # JEDEC, 논문, 기업 기술 PDF
-├── agents/                # Supervisor / Web / RAG / Draft / Formatting
-├── tools/                 # Search, Retriever 구현
-├── core/                  # State 설계
-├── output/                # 보고서 및 Retrieval 평가 결과
-├── main.py                # 실행 스크립트
-├── evaluate_rag.py        # Retrieval 평가
 ├── data/                  # JEDEC, 논문, 기업 기술 PDF
 ├── agents/                # Supervisor / Web / RAG / Draft / Formatting
 ├── tools/                 # Search, Retriever 구현
