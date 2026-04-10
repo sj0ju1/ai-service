@@ -64,5 +64,5 @@ miniproject/
 ```
 
 ## Contributors
-- 배수정 : Prompt Engineering, Supervisor/Draft 설계, 보고서 구조 설계, PDF/RAG 데이터 구성, Retrieval 실험, 평가 코드 정리
-- 안가은 : Prompt Engineering, Supervisor/Draft 설계, 보고서 구조 설계, PDF/RAG 데이터 구성, Retrieval 실험, 평가 코드 정리
+- 배수정 : Prompt Engineering, Agent 설계, 보고서 구조 설계, PDF/RAG 데이터 구성, Retrieval 실험, 평가 코드 정리
+- 안가은 : Prompt Engineering, Agent 설계, 보고서 구조 설계, PDF/RAG 데이터 구성, Retrieval 실험, 평가 코드 정리
