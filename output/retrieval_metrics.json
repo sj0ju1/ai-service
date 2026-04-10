@@ -1,0 +1,11 @@
+{
+  "num_queries": 5,
+  "metrics": {
+    "hit_rate@1": 0.4,
+    "mrr@1": 0.4,
+    "hit_rate@3": 0.8,
+    "mrr@3": 0.5667,
+    "hit_rate@5": 1.0,
+    "mrr@5": 0.6167
+  }
+}

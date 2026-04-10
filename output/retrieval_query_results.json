@@ -1,0 +1,66 @@
+[
+  {
+    "query": "삼성전자 HBM4 양산과 발열 제어 기술",
+    "expected_docs": [
+      "hbm4.pdf"
+    ],
+    "retrieved_docs": [
+      "hbm4.pdf",
+      "JEP30-E100I.pdf"
+    ],
+    "first_relevant_rank": 1
+  },
+  {
+    "query": "SK하이닉스 HBM4 로드맵과 대역폭 경쟁력",
+    "expected_docs": [
+      "JEPsk.pdf",
+      "hbm4.pdf"
+    ],
+    "retrieved_docs": [
+      "hbm4.pdf",
+      "2310.09385v2.pdf",
+      "JEP30-E100I.pdf"
+    ],
+    "first_relevant_rank": 1
+  },
+  {
+    "query": "CXL 기반 메모리 확장 솔루션과 적용 방향",
+    "expected_docs": [
+      "CXL.pdf"
+    ],
+    "retrieved_docs": [
+      "2412.20249v2.pdf",
+      "2306.11227v3.pdf",
+      "2012.03112v5.pdf",
+      "CXL.pdf"
+    ],
+    "first_relevant_rank": 4
+  },
+  {
+    "query": "JEDEC 메모리 표준 규격과 핀 배열 정보",
+    "expected_docs": [
+      "JEP30-E100I.pdf"
+    ],
+    "retrieved_docs": [
+      "JEPsamsung.pdf",
+      "JEP30-E100I.pdf",
+      "CXL.pdf",
+      "hbm4.pdf"
+    ],
+    "first_relevant_rank": 2
+  },
+  {
+    "query": "삼성전자 메모리 전략과 HBM 관련 비교 자료",
+    "expected_docs": [
+      "JEPsamsung.pdf",
+      "hbm4.pdf"
+    ],
+    "retrieved_docs": [
+      "2310.09385v2.pdf",
+      "2012.03112v5.pdf",
+      "hbm4.pdf",
+      "JEP30-E100I.pdf"
+    ],
+    "first_relevant_rank": 3
+  }
+]
